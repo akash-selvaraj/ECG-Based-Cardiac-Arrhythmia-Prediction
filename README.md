@@ -145,7 +145,7 @@ This project has two major parts:
 #### 1. **Navigate to the backend directory**
 
 ```bash
-cd ecg_backend/
+cd ecg-backend/
 ```
 
 #### 2. **Create virtual environment**
