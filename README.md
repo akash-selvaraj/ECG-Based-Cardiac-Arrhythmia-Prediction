@@ -145,7 +145,7 @@ This project has two major parts:
 #### 1. **Navigate to the backend directory**
 
 ```bash
-cd backend/
+cd ecg_backend/
 ```
 
 #### 2. **Create virtual environment**
@@ -181,19 +181,13 @@ http://localhost:8000
 
 ### 🌐 Frontend Setup (Next.js Client)
 
-#### 1. **Navigate to frontend**
-
-```bash
-cd frontend/
-```
-
-#### 2. **Install packages**
+#### 1. **Install packages**
 
 ```bash
 npm install
 ```
 
-#### 3. **Run the development server**
+#### 2. **Run the development server**
 
 ```bash
 npm run dev
