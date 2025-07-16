@@ -212,7 +212,7 @@ http://localhost:3000
 1. Launch **backend**: Receives ECG images, loads model, returns predictions
 2. Launch **frontend**: User uploads image, sees prediction + plot
 3. API Call: `POST /predict` from frontend to backend
-4. Output: JSON with class label + signal visualization
+4. Output: JSON with class label + confidence
 
 ---
 
@@ -223,7 +223,7 @@ After both servers are running:
 * Open `http://localhost:3000`
 * Upload a `.jpg` ECG scan
 * Click **"Predict"**
-* View waveform + **Predicted Class** + **Health Tips**
+* View **Predicted Class** + **Health Tips**
 
 ---
 
