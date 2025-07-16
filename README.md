@@ -131,6 +131,102 @@ Based on **AAMI classification standards**, this model predicts five broad arrhy
 
 ---
 
+## 🔧 How to Run the Application
+
+This project has two major parts:
+
+* ✅ **Frontend**: Built with Next.js (React + Tailwind)
+* ✅ **Backend**: Built with Python (FastAPI or Flask) + TensorFlow
+
+---
+
+### 🖥 Backend Setup (Python Inference Service)
+
+#### 1. **Navigate to the backend directory**
+
+```bash
+cd backend/
+```
+
+#### 2. **Create virtual environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Use `venv\Scripts\activate` on Windows
+```
+
+#### 3. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. **Start the server**
+
+```bash
+# For FastAPI
+uvicorn app:app --reload
+
+# Or for Flask (if using Flask instead)
+python app.py
+```
+
+#### ➕ Server will be live at:
+
+```
+http://localhost:8000
+```
+
+---
+
+### 🌐 Frontend Setup (Next.js Client)
+
+#### 1. **Navigate to frontend**
+
+```bash
+cd frontend/
+```
+
+#### 2. **Install packages**
+
+```bash
+npm install
+```
+
+#### 3. **Run the development server**
+
+```bash
+npm run dev
+```
+
+#### ➕ Web app will be live at:
+
+```
+http://localhost:3000
+```
+
+---
+
+### ✅ Full Pipeline Flow
+
+1. Launch **backend**: Receives ECG images, loads model, returns predictions
+2. Launch **frontend**: User uploads image, sees prediction + plot
+3. API Call: `POST /predict` from frontend to backend
+4. Output: JSON with class label + signal visualization
+
+---
+
+## 🔁 Quick Test
+
+After both servers are running:
+
+* Open `http://localhost:3000`
+* Upload a `.jpg` ECG scan
+* Click **"Predict"**
+* View waveform + **Predicted Class** + **Health Tips**
+
+---
+
 ## 📝 License
 
 This project is released under the **MIT License**.
